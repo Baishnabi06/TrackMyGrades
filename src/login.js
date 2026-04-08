@@ -19,7 +19,16 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
     const username = document.getElementById('username').value.trim();
     const password = document.getElementById('password').value;
+    
     if (username === DEMO_USER.username && password === DEMO_USER.password) {
+      sessionStorage.setItem('loggedIn', 'true');
+      window.location.href = 'dashboard.html';
+      return;
+    }
+    // Check against registered users in localStorage
+    const users = JSON.parse(localStorage.getItem('users') || '[]');
+    const found = users.find(u => u.username === username && u.password === password);
+    if (found) {
       sessionStorage.setItem('loggedIn', 'true');
       window.location.href = 'dashboard.html';
     } else {
