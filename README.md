@@ -1,4 +1,4 @@
-# Student Academic Management System
+# TrackMyGrades - Smart Result Tracker
 
 A modern, responsive web-based system for managing student academics, including login, dashboard, result management, CGPA/percentage conversion, marksheet viewing, and placement prediction.
 
