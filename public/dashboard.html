@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-blue-500 to-purple-600 min-h-screen flex items-center justify-center">
+  <div class="w-full sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl px-2 sm:px-8 md:px-16 py-8 sm:py-12 md:py-16 bg-white rounded-3xl shadow-2xl animate-fadeInScaleBlur relative min-h-[60vh] max-h-[90vh] overflow-auto transition-all duration-700">
+    <div class="absolute top-4 left-4 z-10">
+      <button id="toggleTheme" class="text-gray-500 hover:text-gray-800 transition text-2xl bg-white bg-opacity-70 rounded-full p-2 shadow"><i class="fas fa-moon"></i></button>
+    </div>
+    <div class="flex items-center mb-6 relative">
+      <h2 class="text-2xl font-bold text-gray-800 mx-auto">Dashboard</h2>
+      <button id="logoutBtn" class="absolute right-0 text-red-500 hover:text-red-700 transition"><i class="fas fa-sign-out-alt"></i> Logout</button>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+      <a href="add-result.html" class="dashboard-card block p-8 rounded-2xl shadow-xl bg-gradient-to-br from-blue-400 to-blue-600 text-white text-center transform hover:scale-105 transition-all duration-300 flex flex-col items-center justify-center min-h-[160px]">
+        <i class="fas fa-plus-circle text-5xl mb-4 animate-pulse"></i>
+        <span class="font-bold text-2xl tracking-wide">Add Result</span>
+      </a>
+      <a href="sgpa-to-cgpa.html" class="dashboard-card block p-8 rounded-2xl shadow-xl bg-gradient-to-br from-green-400 to-green-600 text-white text-center transform hover:scale-105 transition-all duration-300 flex flex-col items-center justify-center min-h-[160px]">
+        <i class="fas fa-exchange-alt text-5xl mb-4 animate-pulse"></i>
+        <span class="font-bold text-2xl tracking-wide">SGPA to CGPA</span>
+      </a>
+      <a href="cgpa-to-percentage.html" class="dashboard-card block p-8 rounded-2xl shadow-xl bg-gradient-to-br from-yellow-400 to-yellow-600 text-white text-center transform hover:scale-105 transition-all duration-300 flex flex-col items-center justify-center min-h-[160px]">
+        <i class="fas fa-percentage text-5xl mb-4 animate-pulse"></i>
+        <span class="font-bold text-2xl tracking-wide">CGPA to Percentage</span>
+      </a>
+      <a href="marksheet.html" class="dashboard-card block p-8 rounded-2xl shadow-xl bg-gradient-to-br from-purple-400 to-purple-600 text-white text-center transform hover:scale-105 transition-all duration-300 flex flex-col items-center justify-center min-h-[160px]">
+        <i class="fas fa-file-alt text-5xl mb-4 animate-pulse"></i>
+        <span class="font-bold text-2xl tracking-wide">View Marksheet</span>
+      </a>
+      <a href="placement.html" class="dashboard-card block p-8 rounded-2xl shadow-xl bg-gradient-to-br from-pink-400 to-pink-600 text-white text-center transform hover:scale-105 transition-all duration-300 flex flex-col items-center justify-center min-h-[160px] sm:col-span-2">
+        <i class="fas fa-briefcase text-5xl mb-4 animate-pulse"></i>
+        <span class="font-bold text-2xl tracking-wide">Placement Predictor</span>
+      </a>
+    </div>
+    
+  </div>
+  <script src="../src/dashboard.js"></script>
+</body>
+</html>

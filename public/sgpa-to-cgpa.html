@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SGPA to CGPA Converter</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-blue-500 to-purple-600 min-h-screen flex items-center justify-center">
+  <div class="w-full sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl px-2 sm:px-8 md:px-16 py-8 sm:py-12 md:py-16 bg-white rounded-3xl shadow-2xl animate-fadeInScaleBlur relative min-h-[50vh] max-h-[90vh] overflow-auto transition-all duration-700">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-2xl font-bold text-gray-800">SGPA to CGPA Converter</h2>
+      <a href="dashboard.html" class="text-blue-500 hover:text-blue-700 transition"><i class="fas fa-arrow-left"></i> Dashboard</a>
+    </div>
+    <form id="sgpaForm" class="space-y-4">
+      <div id="sgpaInputs" class="space-y-2"></div>
+      <button type="button" id="addSgpaBtn" class="py-1 px-3 bg-green-500 text-white rounded hover:bg-green-600 transition"><i class="fas fa-plus"></i> Add SGPA</button>
+      <button type="submit" class="w-full py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Calculate CGPA</button>
+      <div id="cgpaResult" class="mt-4 text-lg font-semibold text-center"></div>
+    </form>
+  
+  </div>
+  <script src="../src/sgpa-to-cgpa.js"></script>
+</body>
+</html>
