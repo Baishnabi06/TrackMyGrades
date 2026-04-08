@@ -1,5 +1,3 @@
-/* styles.css - Custom styles and animations */
-
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -49,8 +47,8 @@ body.dark .text-gray-800 {
   color: #f3f4f6 !important;
 }
 
-/* Add background image for login page */
-body.login-bg {
+
+body {
   background-image: url('/assets/bg-login.jpg');
   background-size: cover;
   background-position: center;
@@ -60,7 +58,7 @@ body.login-bg::before {
   content: '';
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(59, 130, 246, 0.5); /* blue overlay */
+  background: rgba(59, 130, 246, 0.5); 
   z-index: 0;
 }
 
